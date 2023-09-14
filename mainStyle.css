@@ -1,0 +1,214 @@
+﻿/*Réglages généraux*/
+body {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 1em;
+  font-style: lighter;
+  background-color: #EAEAEA;
+  list-style: none;
+}
+
+
+@media (orientation: landscape) {
+  body{font-size: 2em;}
+}
+
+
+* {
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #CCCCCC;
+}
+
+
+
+/*header*/
+
+header {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+  background: linear-gradient(#36B1FF, #005CE4);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+header a {
+  /*liens*/
+  color: #ffffff;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 20px;
+}
+header lu {
+  list-style-type: none;
+}
+
+header h1 {
+  color: #ffffff;
+  font-family: 'Baloo 2', sans-serif;
+  padding:20px;
+  font-size: 2em;
+  margin: 0;
+}
+
+@media (orientation: landscape) {
+  header h1 {font-size: 3em;}
+
+}
+
+header .droite {
+  margin-left: auto;
+  text-align: end;
+  padding: 30px;
+}
+
+/*subheader*/
+
+.subheader {
+  background: linear-gradient(#7AA317, #A7DA2C);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  min-height: 40px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.subheader h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #ffffff;
+  padding:12px;
+  line-height: 1;
+  font-size: 1em;
+}
+
+@media (orientation: landscape) {
+  .subheader{font-size: 2em;}
+
+}
+
+
+
+li a{
+  text-decoration-line: none;
+}
+
+/*Spécifique de la page Index*/
+
+.container_index .connexion {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 50px;
+  /*    border-radius: 63% 37% 25% 75% / 64% 56% 44% 36%;*/
+  border-radius: 50% 50% 49% 51% / 50% 37% 63% 50%;
+  margin: auto;
+  background: linear-gradient(#36B1FF, #005CE4);
+  width: 400px;
+  color: #ffffff;
+}
+
+
+.container_index {
+  padding : 40px;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
+
+/*Spécifique de la page Home*/
+
+.container_home div {
+  display : flex;
+  justify-content: center;
+  padding: 3vh;
+}
+
+
+/*bouton du menu home */
+
+.bouton_rose {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 22vw;
+  width: 64vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 20px;
+  background-image: url('./images/rose.png');
+  background-size: cover;
+}
+
+.bouton_orange {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 22vw;
+  width: 64vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  border-radius: 20px;
+  background-image: url('./images/orange.png');
+  background-size: cover;
+}
+
+
+@media (orientation: landscape){
+  .bouton_rose {
+    
+    height: 22vh;
+    width: 64vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 20px;
+    background-image: url('/images/rose.png');
+    background-size: cover;
+    font-size: 1.2em;
+  }
+  
+  .bouton_orange {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    height: 22vh;
+    width: 64vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 20px;
+    background-image: url('/images/orange.png');
+    background-size: cover;
+    font-size: 1.2em;
+}
+}
+
+
+
+/*Spécifique de la page Register*/
+
+.container_register .connexion {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 50px;
+  /*    border-radius: 63% 37% 25% 75% / 64% 56% 44% 36%;*/
+  border-radius: 50% 50% 49% 51% / 50% 37% 63% 50%;
+  margin: auto;
+  background: linear-gradient(#36B1FF, #005CE4);
+  width: 400px;
+  color: #ffffff;
+}
+
+
+.container_register {
+  padding : 40px;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+}
